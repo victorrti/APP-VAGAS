@@ -1,6 +1,6 @@
-package br.com.victorrodrigues.iocdi;
+package br.com.victorrodrigues.conceitosSpring.iocdi;
 
-import org.springframework.stereotype.Component;
+
 import org.springframework.stereotype.Service;
 
 @Service

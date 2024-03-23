@@ -15,6 +15,7 @@ import jakarta.validation.Valid;
 public class JobController {
     @Autowired
     private CreateJobUseCase  createJobUseCase;
+    @RequestMapping("/")
     public ResponseEntity<Object> create(@Valid @RequestBody JobEntity jobEntity){
         try{
             var result = this.createJobUseCase.execute(jobEntity);

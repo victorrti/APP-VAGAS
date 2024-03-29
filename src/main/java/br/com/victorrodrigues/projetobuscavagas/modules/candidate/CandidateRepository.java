@@ -5,7 +5,10 @@ import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateEntit
 
 import java.util.Optional;
 import java.util.UUID;
+import java.util.List;
+
 
 public interface CandidateRepository extends JpaRepository<CandidateEntity,UUID>{
     Optional<CandidateEntity> findByUsernameOrEmail(String username,String email);
+    Optional<CandidateEntity> findByUsername(String username);
 }

@@ -5,14 +5,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.victorrodrigues.projetobuscavagas.modules.company.dto.AuthCompanyDTO;
 import br.com.victorrodrigues.projetobuscavagas.modules.company.useCase.AuthCompanyUseCase;
-import io.micrometer.core.ipc.http.HttpSender.Response;
 
-import javax.naming.AuthenticationException;
-
-import org.hibernate.jdbc.Expectations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,9 +28,6 @@ public class AuthCompanyController {
         }catch(Exception e){
            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(e.getMessage());
         }
-      
-        
-        
     }
     
 }

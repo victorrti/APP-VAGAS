@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 public class CreateJobUseCase {
     @Autowired
     JobRepository JobRepository;
-    public JobEntity execute( JobEntity jobEntity){  
+    public JobEntity execute(@Valid JobEntity jobEntity){  
           return this.JobRepository.save(jobEntity);
     }
 }

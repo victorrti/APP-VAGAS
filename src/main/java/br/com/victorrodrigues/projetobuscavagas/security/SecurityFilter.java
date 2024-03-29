@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import br.com.victorrodrigues.projetobuscavagas.providers.JWTProvider;
-import jakarta.annotation.Nonnull;
+
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -22,7 +22,7 @@ public class SecurityFilter extends OncePerRequestFilter {
    @Autowired
     private JWTProvider jwtProvider;
     @Override
-    protected void doFilterInternal(@Nonnull HttpServletRequest request,@Nonnull HttpServletResponse response,@Nonnull FilterChain filterChain)
+    protected void doFilterInternal( HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
             throws ServletException, IOException {
                 SecurityContextHolder.getContext().setAuthentication(null);
                String header = request.getHeader("Authorization");

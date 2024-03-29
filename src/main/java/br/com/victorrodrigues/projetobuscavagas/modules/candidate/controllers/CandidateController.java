@@ -4,10 +4,10 @@ package br.com.victorrodrigues.projetobuscavagas.modules.candidate.controllers;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateEntity;
-import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateRepository;
+import br.com.victorrodrigues.projetobuscavagas.modules.candidate.entity.CandidateEntity;
+
 import br.com.victorrodrigues.projetobuscavagas.modules.candidate.useCases.CreateCandidateUseCase;
-import br.com.victorrodrigues.projetobuscavagas.modules.exceptions.UserFoundException;
+
 import jakarta.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +28,10 @@ public class CandidateController {
             var result =  createCandidateUseCase.execute(candidateEntity);          
             return ResponseEntity.ok().body(result);
         }catch(Exception e){
-            return ResponseEntity.badRequest().body(e.getMessage()) ;
+            return ResponseEntity.badRequest().body(e.getMessage());
         }
+
+        
        
     
     }

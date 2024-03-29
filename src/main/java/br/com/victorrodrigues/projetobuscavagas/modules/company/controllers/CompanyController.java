@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.victorrodrigues.projetobuscavagas.modules.company.entities.CompanyEntities;
 import br.com.victorrodrigues.projetobuscavagas.modules.company.useCase.CreateCompanyUseCase;
-import br.com.victorrodrigues.projetobuscavagas.modules.exceptions.UserFoundException;
+
 import jakarta.validation.Valid;
 
 import org.springframework.web.bind.annotation.RequestBody;

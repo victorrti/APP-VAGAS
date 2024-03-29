@@ -1,4 +1,4 @@
-package br.com.victorrodrigues.projetobuscavagas.modules.candidate;
+package br.com.victorrodrigues.projetobuscavagas.modules.candidate.entity;
 
 import java.time.LocalDateTime;
 

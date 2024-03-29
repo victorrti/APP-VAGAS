@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateEntity;
-import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateRepository;
+import br.com.victorrodrigues.projetobuscavagas.modules.candidate.entity.CandidateEntity;
+import br.com.victorrodrigues.projetobuscavagas.modules.candidate.repository.CandidateRepository;
 import br.com.victorrodrigues.projetobuscavagas.modules.exceptions.UserFoundException;
 
 @Service

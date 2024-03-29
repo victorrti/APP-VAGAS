@@ -1,11 +1,12 @@
-package br.com.victorrodrigues.projetobuscavagas.modules.candidate;
+package br.com.victorrodrigues.projetobuscavagas.modules.candidate.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import br.com.victorrodrigues.projetobuscavagas.modules.candidate.CandidateEntity;
+
+import br.com.victorrodrigues.projetobuscavagas.modules.candidate.entity.CandidateEntity;
 
 import java.util.Optional;
 import java.util.UUID;
-import java.util.List;
+
 
 
 public interface CandidateRepository extends JpaRepository<CandidateEntity,UUID>{
